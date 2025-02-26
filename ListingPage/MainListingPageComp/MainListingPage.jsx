@@ -12,7 +12,7 @@ function MainListingPage(props) {
   const [queryPre, setQueryPre] = useState("");
   const [tatalSearch, setTatalSearch] = useState(0);
 
-  useEffect(() => {
+  useMemo(() => {
     console.log("use Effect Start===========>");
     const fetchData = async () => {
         console.log("use Effect fetchData===========>");
